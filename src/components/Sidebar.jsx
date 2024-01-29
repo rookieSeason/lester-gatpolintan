@@ -9,7 +9,7 @@ function Sidebar() {
             <div className="flex flex-col justify-between flex-1 mt-6">
                 <nav className="-mx-3">
                     <div className="space-y-3 ">
-                        <Link to='nav' smooth={true} className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
+                        <Link to='nav' smooth={true} className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-full dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
                             <FaHome className='text-xl'/>
                         </Link>
                         <Link to='about' smooth={true} className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700">
