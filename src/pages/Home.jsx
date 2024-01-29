@@ -2,10 +2,17 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import avatar from "../assets/peeps-avatar-alpha.png";
 import NavBar from '../components/NavBar';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 function Home() {
+    AOS.init();
     return (
-        <section name='home' className='top-0 bg-white dark:bg-[#243447] duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen'>
+        <section
+            data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="100"
+                data-aos-duration="1000" name='home' className='top-0 bg-white dark:bg-[#243447] duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen'>
             <p className='text-xl text-gray-700 dark:text-gray-200 sm:text-2xl font-bold'>Hi, My name is</p>
             <div className='text-center text-4xl sm:text-7xl font-extrabold animate-float'>
                 <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300'>
