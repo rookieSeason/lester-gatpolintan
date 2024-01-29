@@ -10,7 +10,6 @@ function Home() {
     return (
         <section
             data-aos="fade-up"
-                data-aos-offset="200"
                 data-aos-delay="100"
                 data-aos-duration="1000" name='home' className='top-0 bg-white dark:bg-[#243447] duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen'>
             <p className='text-xl text-gray-700 dark:text-gray-200 sm:text-2xl font-bold'>Hi, My name is</p>
