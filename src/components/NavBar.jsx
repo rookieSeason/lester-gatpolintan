@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoSunnyOutline } from "react-icons/io5";
 import { PiUserList } from "react-icons/pi";
+import logo1 from "../assets/logo1.png"
 function NavBar() {
     const[theme, setTheme] = useState(false);
 
@@ -18,11 +19,11 @@ function NavBar() {
         setTheme(theme === "light" ? "dark" : "light");
     }
     return (
-        <div className='top-0 flex flex-wrap bg-white px-10 text-gray-700 dark:bg-[#243447] duration-300 z-20'>
+        <div name='nav' className='w-full top-0 flex flex-wrap bg-white px-10 text-gray-700 dark:bg-[#243447] duration-300 z-20'>
             <nav className='top-0 py-3 w-full flex justify-between items-center'>
                 <h1 className='text-3xl font-bold tracking-wider'>
                     <a href="/" className='text-gray-500 dark:text-gray-100'>
-                        L<span className='text-cyan-500'>G</span>
+                        <img src={logo1} alt="logo" className='relative w-10 h-10' />
                     </a>
                 </h1>
                 <ul className='flex items-center'>
