@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function Sidebar() {
     return (
     
-        <aside class="hidden md:flex fixed shadow-lg translate-y-1/2 border border-gray-400 rounded-full flex-col w-16 h-72 left-2 px-5 py-6 bg-white dark:bg-gray-700 dark:border-gray-600 z-20">
+        <aside class="hidden md:flex fixed shadow-lg translate-y-1/2 border border-gray-400 rounded-full flex-col w-16 h-72 left-2 px-5 py-6 bg-white dark:bg-gray-700 dark:border-gray-600 duration-300 z-20">
             
             <div className="flex flex-col justify-between flex-1 mt-6">
                 <nav className="-mx-3">

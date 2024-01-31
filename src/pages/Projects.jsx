@@ -12,7 +12,7 @@ function Projects() {
                     <h4 className="font-semibold text-lg sm:text-xl text-gray-600 dark:text-gray-300">Online Relocation MIS</h4>
                     <p className="text-gray-600 dark:text-gray-300">Capstone Project</p>
                     <p className="text-sm sm:text-md text-gray-500 dark:text-gray-400">
-                        PHP, My SQL, Bootstrap,
+                        PHP, My SQL, Bootstrap
                     </p>
                 </div>
                 <div className="rounded-2xl shadow-md p-8 border border-gray-300 dark:border-gray-400">

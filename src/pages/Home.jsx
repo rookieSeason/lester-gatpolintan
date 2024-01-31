@@ -2,11 +2,10 @@ import React from 'react'
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import avatar from "../assets/peeps-avatar-alpha.png";
 import NavBar from '../components/NavBar';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 
 function Home() {
-    AOS.init();
+    
     return (
         <section
             data-aos="fade-up"

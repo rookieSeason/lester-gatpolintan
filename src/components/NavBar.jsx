@@ -3,7 +3,10 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { IoSunnyOutline } from "react-icons/io5";
 import { PiUserList } from "react-icons/pi";
 import logo1 from "../assets/logo1.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 function NavBar() {
+    AOS.init();
     const[theme, setTheme] = useState(false);
 
     useEffect(()=>{
