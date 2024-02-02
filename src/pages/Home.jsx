@@ -13,7 +13,7 @@ function Home() {
                 data-aos-duration="1000" name='home' className='top-0 bg-white dark:bg-[#243447] duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen'>
             <p className='text-xl text-gray-700 dark:text-gray-200 sm:text-2xl font-bold'>Hi, My name is</p>
             <div className='text-center text-4xl sm:text-7xl font-extrabold animate-float'>
-                <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300'>
+                <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300 animate-text'>
                     Lester John Gatpolintan
                 </h1>
             </div>
