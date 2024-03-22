@@ -12,7 +12,7 @@ function Footer() {
     <footer className="bg-white dark:bg-[#243447]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-lg text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © {new Date().getFullYear()}{" "}
             <a href="/" className="hover:underline">
               {name}™
@@ -22,9 +22,9 @@ function Footer() {
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             {socials.map((social) => {
               return (
-                <div key={social.id} className="px-2">
+                <div key={social.id} className="mx-auto sm:px-2">
                   <span
-                    className="text-gray-600 dark:text-gray-400 text-2xl"
+                    className="text-gray-600 dark:text-gray-400 text-2xl hover:text-cyan-600 dark:hover:text-cyan-400 duration-300"
                     title={social.name}
                   >
                     {social.icon}

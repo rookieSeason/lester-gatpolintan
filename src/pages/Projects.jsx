@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+
 function Projects() {
   const projects = [
     {
@@ -5,24 +7,28 @@ function Projects() {
       name: "Online Relocation MIS",
       description: "Capstone Project",
       technologies: "PHP, My SQL, Bootstrap",
+      link: "View on Github",
     },
     {
       id: 2,
       name: "Basic Student System",
       description: "Basic CRUD Practices",
       technologies: "Laravel, Tailwind, Alpine, My SQL",
+      link: "View on Github",
     },
     {
       id: 3,
       name: "Personal Portfolio Webiste",
       description: "Personal Website",
       technologies: "HTML, CSS, JavaScript",
+      link: "View on Github",
     },
     {
       id: 4,
-      name: "Air FIbr Queueing System",
+      name: "Air Fibr Queueing System",
       description: "School Project",
       technologies: "ASP.NET, HTML, CSS, Data Tables",
+      link: "View on Github",
     },
   ];
   return (
@@ -31,7 +37,7 @@ function Projects() {
       className="flex flex-col bg-white dark:bg-[#243447] min-h-screen w-screen"
     >
       <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
-        Portfolio
+        Featured Projects
       </h1>
       <p className="pl-8 sm:pl-24 text-xl text-gray-600 dark:text-gray-300 my-4">
         Here are my projects that i worked before
@@ -52,6 +58,9 @@ function Projects() {
               <p className="text-sm sm:text-md text-gray-500 dark:text-gray-400">
                 {project.technologies}
               </p>
+              <button className="bg-[#2b3137] hover:bg-gray-700 hover:scale-105 duration-300 rounded-lg flex items-center gap-2 p-2 mt-2 text-gray-200 text-sm border border-gray-400">
+                {project.link} <FaGithub className="text-xl" />
+              </button>
             </div>
           );
         })}

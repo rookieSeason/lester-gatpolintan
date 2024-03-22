@@ -1,27 +1,24 @@
-import './App.css'
-import Home from './pages/Home';
-import NavBar from './components/NavBar';
-import About from './pages/About';
-import BottomNav from './components/BottomNav';
-import Projects from './pages/Projects';
-import Footer from './pages/Footer';
-import Contact from './pages/Contact';
-import Sidebar from './components/Sidebar';
+import "./App.css";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Work from "./pages/Work";
+import Footer from "./pages/Footer";
+import Contact from "./pages/Contact";
 
 function App() {
-
   return (
-    <div className='font-google overflow-x-hidden'>
+    <div className="font-google overflow-x-hidden">
       <NavBar />
-      <Sidebar/>
-      <BottomNav />
       <Home />
       <About />
       <Projects />
-      <Contact/>
-      <Footer/>
+      <Work />
+      <Contact />
+      <Footer />
     </div>
   );
 }
 
-export default App
+export default App;
