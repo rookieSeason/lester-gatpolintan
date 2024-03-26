@@ -84,7 +84,7 @@ function About() {
             <span className="text-cyan-600 dark:text-cyan-400">Today!</span>
           </h4>
         </div>
-        <div className="pt-4 mx-auto pr-4">
+        <div className=" mx-auto p-4">
           <span className="mx-auto sm:flex flex-col items-center justify-center">
             <div className="max-w-[700px] justify-center items-center w-full grid grid-cols-3 text-gray-500 dark:text-gray-400">
               {skillset.map((skills) => {
