@@ -31,6 +31,16 @@ function Work() {
           <li>Resolved issues while migrating data for new application.</li>
         </ul>
       ),
+      technologies: (
+        <ul className="list-disc px-4">
+          <li>React Js</li>
+          <li>Node Js</li>
+          <li>Sequelize</li>
+          <li>MS SQL Server</li>
+          <li>JavaScript</li>
+          <li>Reactstrap</li>
+        </ul>
+      ),
     },
     {
       id: 2,
@@ -42,12 +52,13 @@ function Work() {
         <ul className="list-disc px-4">
           <li>
             Assist with design projects in creating graphics for social media,
-            materials, and website assets.
+            and website assets.
           </li>
           <li>
             Research and collect images, fonts, and design elements for
-            projects. Maintain digital asset libraries.
+            projects.
           </li>
+          <li>Maintain digital asset libraries.</li>
           <li>
             Collaborate on creative concepts and provide feedback on designs.
           </li>
@@ -57,6 +68,14 @@ function Work() {
           </li>
         </ul>
       ),
+      technologies: (
+        <ul className="list-disc px-4">
+          <li>Adobe Photoshop</li>
+          <li>Canva</li>
+          <li>Filmora</li>
+          <li>Capcut</li>
+        </ul>
+      ),
     },
   ];
   return (
@@ -64,7 +83,8 @@ function Work() {
       <div className="grid md:grid-cols-2 py-12 gap-2">
         <div className="my-auto">
           <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
-            Career Journey
+            <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
+            Journey
           </h1>
           <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 dark:text-gray-300 my-4">
             Here are my milestone throughout my career.
@@ -91,6 +111,12 @@ function Work() {
                   </span>
                   <span className="text-sm sm:text-md font-normal text-gray-500 dark:text-gray-300">
                     {work.responsibilities}
+                  </span>
+                  <span className="text-sm sm:text-md font-semibold text-gray-500 dark:text-gray-300">
+                    Technologies:
+                  </span>
+                  <span className="top-3 text-sm sm:text-md font-normal text-gray-500 dark:text-gray-300">
+                    {work.technologies}
                   </span>
                 </li>
               );

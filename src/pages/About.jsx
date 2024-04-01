@@ -1,7 +1,8 @@
 import React from "react";
 import MyProfile from "../assets/profile.jpg";
-import { FaReact, FaNodeJs, FaDatabase, FaAws, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaGitAlt } from "react-icons/fa";
 import { SiSequelize, SiPhp, SiExpress, SiTailwindcss } from "react-icons/si";
+import { RiJavascriptFill } from "react-icons/ri";
 
 function About() {
   const about = {
@@ -19,7 +20,7 @@ function About() {
     { id: 3, icon: <SiExpress />, name: "Express" },
     { id: 4, icon: <SiPhp />, name: "Php" },
     { id: 5, icon: <SiTailwindcss />, name: "Tailwind" },
-    { id: 6, icon: <FaAws />, name: "AWS" },
+    { id: 6, icon: <RiJavascriptFill />, name: "JavaScript" },
     { id: 7, icon: <FaGitAlt />, name: "Git" },
     { id: 8, icon: <SiSequelize />, name: "Sequelize" },
     { id: 9, icon: <FaDatabase />, name: "SQL" },

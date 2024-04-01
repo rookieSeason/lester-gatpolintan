@@ -10,7 +10,6 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="font-google overflow-x-hidden">
-      <NavBar />
       <Home />
       <About />
       <Projects />
