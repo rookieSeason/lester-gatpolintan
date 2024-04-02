@@ -79,7 +79,7 @@ function Work() {
     },
   ];
   return (
-    <div className="w-screen h-screen bg-white dark:bg-[#243447]">
+    <div className="min-w-screen min-h-screen bg-white dark:bg-[#243447]">
       <div className="grid md:grid-cols-2 py-12 gap-2">
         <div className="my-auto">
           <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
@@ -87,7 +87,7 @@ function Work() {
             Journey
           </h1>
           <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 dark:text-gray-300 my-4">
-            Here are my milestone throughout my career.
+            My milestone throughout my journey.
           </p>
         </div>
         <div className="px-4">
