@@ -41,13 +41,20 @@ const Accordion = ({ items }) => {
                 />
               </svg>
             </button>
-            {index === openIndex && (
-              <div className="p-4 border-t border-gray-500">
-                <span className="text-gray-500 dark:text-gray-300 text-sm sm:text-md">
-                  {item.responsibilities}
-                </span>
-              </div>
-            )}
+            <div
+              className={`p-4 border-t border-gray-300 dark:border-gray-500 ${
+                index === openIndex ? "block" : "hidden"
+              }`}
+              style={{
+                maxHeight: index === openIndex ? "1000px" : "0px",
+                transition: "all 0.5s ease-in-out",
+                overflow: "hidden",
+              }}
+            >
+              <span className="text-gray-500 dark:text-gray-300 text-sm sm:text-md">
+                {item.responsibilities}
+              </span>
+            </div>
           </div>
         </div>
       ))}
