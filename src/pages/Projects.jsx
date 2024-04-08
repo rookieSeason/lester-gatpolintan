@@ -39,7 +39,7 @@ function Projects() {
       <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
         Featured Projects
       </h1>
-      <p className="pl-8 sm:pl-24 text-xl text-gray-600 dark:text-gray-300 my-4">
+      <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 dark:text-gray-300 my-4">
         Here are my projects that i worked before
       </p>
       <div className="w-full px-8 md:px-28 grid md:grid-cols-3 gap-x-8 gap-y-4 py-4">

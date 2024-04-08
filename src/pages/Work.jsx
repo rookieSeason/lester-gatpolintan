@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBriefcase } from "react-icons/fa";
+import Accordion from "../components/Accordion";
 
 function Work() {
   const works = [
@@ -80,7 +81,7 @@ function Work() {
   ];
   return (
     <div className="min-w-screen min-h-screen bg-white dark:bg-[#243447]">
-      <div className="grid md:grid-cols-2 py-12 gap-2">
+      <div className="grid md:grid-cols-2 py-12 gap-1">
         <div className="my-auto">
           <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
             <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
@@ -90,38 +91,8 @@ function Work() {
             My milestone throughout my journey.
           </p>
         </div>
-        <div className="px-4">
-          <ul className="relative border-s border-gray-400 dark:border-gray-500 pr-8">
-            {works.map((work) => {
-              return (
-                <li className="mb-10 ms-4" key={work.id}>
-                  <div className="absolute w-3 h-3 bg-gray-300 rounded-full mt-1.5 -start-1.5 border border-gray-300 dark:border-gray-500 dark:bg-gray-500"></div>
-                  <time className="mb-1 text-sm font-normal leading-none text-gray-600 dark:text-gray-400">
-                    {work.date}
-                  </time>
-                  <h3 className="text-md sm:text-lg font-semibold text-gray-600 dark:text-gray-200">
-                    {work.position}{" "}
-                    <span className="text-sm sm:text-md text-gray-500 dark:text-gray-300">
-                      {" "}
-                      - {work.employment}
-                    </span>
-                  </h3>
-                  <span className="text-sm sm:text-md text-gray-600 dark:text-gray-300">
-                    {work.company}
-                  </span>
-                  <span className="text-sm sm:text-md font-normal text-gray-500 dark:text-gray-300">
-                    {work.responsibilities}
-                  </span>
-                  <span className="text-sm sm:text-md font-semibold text-gray-500 dark:text-gray-300">
-                    Technologies:
-                  </span>
-                  <span className="top-3 text-sm sm:text-md font-normal text-gray-500 dark:text-gray-300">
-                    {work.technologies}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+        <div className="flex justify-center items-center min-h-screen px-4">
+          <Accordion items={works} />
         </div>
       </div>
     </div>
