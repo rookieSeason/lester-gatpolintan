@@ -83,7 +83,7 @@ function Work() {
     <div className="min-w-screen min-h-screen bg-white dark:bg-[#243447]">
       <div className="grid md:grid-cols-2 py-12 gap-1">
         <div className="my-auto">
-          <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
+          <h1 className="animate-float pl-8 font-medium text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
             <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
             Journey
           </h1>

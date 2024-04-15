@@ -42,7 +42,7 @@ const Accordion = ({ items }) => {
               </svg>
             </button>
             <div
-              className={`p-4 border-t border-gray-300 dark:border-gray-500 ${
+              className={`p-4 border-t border-gray-300 dark:border-gray-400 ${
                 index === openIndex ? "block" : "hidden"
               }`}
               style={{

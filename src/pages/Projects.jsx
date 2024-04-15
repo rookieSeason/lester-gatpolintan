@@ -36,7 +36,7 @@ function Projects() {
       name="projects"
       className="flex flex-col bg-white dark:bg-[#243447] min-h-screen w-screen"
     >
-      <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
+      <h1 className="animate-float pl-8 font-medium text-left sm:pl-24 text-4xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
         Featured Projects
       </h1>
       <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 dark:text-gray-300 my-4">

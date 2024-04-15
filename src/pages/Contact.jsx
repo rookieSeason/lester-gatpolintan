@@ -8,7 +8,7 @@ function Contact() {
     >
       <div className="grid md:grid-cols-2 gap-x-8 p-8">
         <div className="text-3xl md:text-5xl text-gray-700 dark:text-gray-100 animate-float">
-          <h1 className="font-bold underline underline-offset-8">
+          <h1 className="font-medium underline underline-offset-8">
             Let's
             <span className="text-cyan-600 dark:text-cyan-400">
               {" "}

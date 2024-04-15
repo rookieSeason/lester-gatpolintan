@@ -30,7 +30,7 @@ function About() {
       name="about"
       className="flex flex-col bg-white dark:bg-[#243447] min-h-screen min-w-screen px-4"
     >
-      <h1 className="animate-float pl-8 text-3xl font-bold text-left md:pl-24 md:text-5xl text-gray-700 dark:text-gray-200 pt-8">
+      <h1 className="animate-float pl-8 text-3xl font-medium text-left md:pl-24 md:text-5xl text-gray-700 dark:text-gray-200 pt-8">
         Hi I'm a{" "}
         <span className="text-cyan-600 dark:text-cyan-400">Developer</span>
       </h1>
@@ -72,10 +72,10 @@ function About() {
       </div>
       <div className="grid sm:grid-cols-2 py-8">
         <div className="pl-8 text-left sm:pl-28 mt-8 animate-float">
-          <h3 className="font-bold text-3xl sm:text-4xl text-gray-700 dark:text-gray-200">
+          <h3 className="font-medium text-3xl sm:text-4xl text-gray-700 dark:text-gray-200">
             Technical Skills
           </h3>
-          <h4 className="max-w-[500px] font-semibold mt-4 text-2xl sm:text-3xl text-gray-600 dark:text-gray-300">
+          <h4 className="max-w-[500px] font-medium mt-4 text-2xl sm:text-3xl text-gray-600 dark:text-gray-300">
             Elevate{" "}
             <span className="text-cyan-600 dark:text-cyan-400">Code</span>,
             Elevate{" "}
