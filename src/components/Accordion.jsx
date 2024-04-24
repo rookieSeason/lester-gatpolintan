@@ -12,7 +12,7 @@ const Accordion = ({ items }) => {
       {items.map((item, index) => (
         <div key={index}>
           <span className="text-gray-400 dark:text-gray-500">{item.date}</span>
-          <div className="bg-white dark:bg-gray-700 shadow-lg rounded-lg mb-4">
+          <div className="bg-white dark:bg-gray-700 shadow-lg rounded-xl mb-4">
             <button
               onClick={() => toggleAccordion(index)}
               className="w-full flex items-center justify-between p-4 focus:outline-none"
@@ -23,7 +23,9 @@ const Accordion = ({ items }) => {
                   {item.company}
                 </span>
               </span>
-
+              <span className="text-gray-500 dark:text-gray-300 text-sm sm:text-md">
+                {item.employment}
+              </span>
               <svg
                 className={`w-6 h-6 transition-transform text-gray-400 ${
                   index === openIndex ? "transform rotate-180" : ""
@@ -41,6 +43,7 @@ const Accordion = ({ items }) => {
                 />
               </svg>
             </button>
+
             <div
               className={`p-4 border-t border-gray-300 dark:border-gray-400 ${
                 index === openIndex ? "block" : "hidden"

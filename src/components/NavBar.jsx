@@ -23,7 +23,7 @@ function NavBar() {
   return (
     <div
       name="nav"
-      className="w-full top-0 flex flex-wrap  px-10 text-gray-700 bg-white dark:bg-[#243447] duration-300 z-20"
+      className="w-full top-0 fixed flex flex-wrap  px-10 text-gray-700 bg-transparent duration-300 z-20"
     >
       <nav className="top-0 py-3 w-full flex justify-between items-center">
         <h1 className="text-3xl font-bold tracking-wider">
@@ -43,14 +43,6 @@ function NavBar() {
                 <BsFillMoonStarsFill className="hover:text-cyan-500 duration-300" />
               )}
             </span>
-          </li>
-          <li>
-            <button className="flex group items-center bg-cyan-400 px-3 py-2 rounded-xl text-slate-50 hover:scale-105 duration-300 ml-8">
-              <span className="mr-2 text-xl">
-                <PiUserList />
-              </span>
-              Resume
-            </button>
           </li>
         </ul>
       </nav>
