@@ -18,20 +18,20 @@ function Home() {
         data-aos-delay="100"
         data-aos-duration="1000"
         name="home"
-        className="top-0 duration-300 bg-white dark:bg-[#243447] flex flex-col mx-auto justify-center items-center min-h-screen min-w-screen"
+        className="top-0 bg-white dark:bg-[#243447] duration-500 flex flex-col mx-auto justify-center items-center min-h-screen min-w-screen"
       >
         <div className="area">
-          <ul className="circles">
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
-            <li className="bg-gray-300 dark:bg-gray-500 blur-xl"></li>
+          <ul className="circles min-h-screen min-w-screen">
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
+            <li className="bg-gray-300 dark:bg-gray-500"></li>
           </ul>
         </div>
         <p className="text-gray-600 dark:text-gray-300 text-4xl">Hello, I'm</p>
