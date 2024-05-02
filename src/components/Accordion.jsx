@@ -8,22 +8,22 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto">
+    <div className="w-full max-w-lg mx-auto ">
       {items.map((item, index) => (
-        <div key={index}>
-          <span className="text-gray-400 dark:text-gray-500">{item.date}</span>
-          <div className="bg-white dark:bg-gray-700 shadow-lg rounded-xl mb-4">
+        <div key={index} className="hover:-rotate-3 duration-300">
+          <span className="text-gray-500">{item.date}</span>
+          <div className="bg-white dark:bg-gray-700 border border-cyan-600 mb-4">
             <button
               onClick={() => toggleAccordion(index)}
               className="w-full flex items-center justify-between p-4 focus:outline-none"
             >
-              <span className="text-md font-medium text-gray-600 dark:text-gray-200">
+              <span className="text-md font-medium text-gray-700">
                 {item.position} &#x2022;{" "}
                 <span className="text-gray-500 dark:text-gray-400">
                   {item.company}
                 </span>
               </span>
-              <span className="text-gray-500 dark:text-gray-300 text-sm sm:text-md">
+              <span className="text-gray-700 text-sm sm:text-md">
                 {item.employment}
               </span>
               <svg
@@ -45,7 +45,7 @@ const Accordion = ({ items }) => {
             </button>
 
             <div
-              className={`p-4 border-t border-gray-300 dark:border-gray-400 ${
+              className={`p-4 border-t border-gray-400 ${
                 index === openIndex ? "block" : "hidden"
               }`}
               style={{
@@ -54,7 +54,7 @@ const Accordion = ({ items }) => {
                 overflow: "hidden",
               }}
             >
-              <span className="text-gray-500 dark:text-gray-300 text-sm sm:text-md">
+              <span className="text-gray-600 text-sm sm:text-md">
                 {item.responsibilities}
               </span>
             </div>

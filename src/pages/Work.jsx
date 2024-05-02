@@ -80,22 +80,27 @@ function Work() {
     },
   ];
   return (
-    <div className="min-w-screen min-h-screen bg-white dark:bg-[#243447]">
+    <section className="min-w-screen min-h-screen bg-white justify-center items-center">
       <div className="grid md:grid-cols-2 py-12 gap-1">
-        <div className="my-auto">
-          <h1 className="animate-float pl-8 font-medium text-left sm:pl-24 text-3xl sm:text-5xl text-gray-700 dark:text-gray-200 pt-8">
+        <div className="flex justify-center items-center px-4">
+          <Accordion items={works} />
+        </div>
+        <div className="my-auto w-full px-8">
+          <h1 className="animate-float font-bold text-left text-3xl sm:text-5xl text-gray-800">
             <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
             Journey
           </h1>
-          <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 dark:text-gray-300 my-4">
-            My milestone throughout my journey.
+          <p className="max-w-[600px] text-md sm:text-lg text-gray-700 my-4 text-justify">
+            Explore my diverse work experiences, ranging from internships to
+            full-time roles across multiple industries. Each engagement
+            showcases my skills, expertise, and achievements, contributing to a
+            rich tapestry of professional growth and learning. Discover how my
+            varied experiences have shaped my career journey and contributed to
+            my success.
           </p>
         </div>
-        <div className="flex justify-center items-center min-h-screen px-4">
-          <Accordion items={works} />
-        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
