@@ -34,7 +34,7 @@ function Projects() {
   return (
     <section
       name="projects"
-      className="flex flex-col bg-white dark:bg-[#243447] min-h-screen w-screen"
+      className="flex flex-col bg-white dark:bg-[#243447] min-h-screen w-screen tracking-tight"
     >
       <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-4xl sm:text-5xl text-gray-800 pt-8">
         Featured{" "}

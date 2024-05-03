@@ -39,7 +39,7 @@ function Skills() {
   };
   return (
     <section className="flex flex-col-reverse min-h-screen min-w-screen bg-white justify-center items-center sm:p-12">
-      <div className="max-w-screen w-full grid md:grid-cols-2 gap-4">
+      <div className="max-w-screen w-full grid md:grid-cols-2 gap-4 tracking-tight">
         <span className="mx-auto sm:flex flex-col items-center justify-center">
           <div className="sm:max-w-[700px] justify-center items-center w-full grid grid-cols-4 gap-8 text-gray-500">
             {skillset.map((skills) => {

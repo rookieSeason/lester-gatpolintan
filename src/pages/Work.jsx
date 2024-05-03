@@ -80,7 +80,7 @@ function Work() {
     },
   ];
   return (
-    <section className="min-w-screen min-h-screen bg-white justify-center items-center">
+    <section className="min-w-screen min-h-screen bg-white justify-center items-center tracking-tight">
       <div className="grid md:grid-cols-2 py-12 gap-1">
         <div className="flex justify-center items-center px-4">
           <Accordion items={works} />

@@ -4,16 +4,13 @@ function Contact() {
   return (
     <section
       name="contact"
-      className="bg-white dark:bg-[#243447] flex justify-center items-center min-h-screen min-w-screen"
+      className="bg-white flex justify-center items-center min-h-screen min-w-screen"
     >
-      <div className="grid md:grid-cols-2 gap-x-8 p-8">
-        <div className="text-3xl md:text-5xl text-gray-700 dark:text-gray-100 animate-float">
-          <h1 className="font-medium underline underline-offset-8">
+      <div className="grid md:grid-cols-2 gap-x-8 p-8 tracking-tight">
+        <div className="text-3xl md:text-5xl text-gray-700 animate-float">
+          <h1 className="font-bold underline underline-offset-8">
             Let's
-            <span className="text-cyan-600 dark:text-cyan-400">
-              {" "}
-              work together!
-            </span>
+            <span className="text-cyan-600"> work together!</span>
           </h1>
         </div>
         <div className="max-w-[550px] p-2">
