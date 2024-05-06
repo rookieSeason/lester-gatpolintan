@@ -38,7 +38,7 @@ function Home() {
         <p className="text-gray-800 text-3xl sm:text-4xl font-bold tracking-tight">
           Hello, I'm
         </p>
-        <div className="text-center text-4xl sm:text-7xl font-black animate-float tracking-tight">
+        <div className="text-center text-5xl sm:text-7xl font-black animate-float tracking-tight">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text py-2">
             {person.name}
           </h1>
@@ -52,8 +52,8 @@ function Home() {
           <button className="inline-flex items-center bg-cyan-500 text-gray-100 p-3 rounded-lg hover:scale-105 duration-300 text-md me-3">
             Download CV <MdDownload className=" ms-2" />
           </button>
-          <button className="inline-flex items-center bg-cyan-500 text-gray-100 p-3 rounded-lg hover:scale-105 duration-300 text-md">
-            Download CV <FaArrowDown className=" ms-2" />
+          <button className="inline-flex items-center border border-cyan-500 text-cyan-500 p-3 rounded-lg hover:scale-105 duration-300 text-md">
+            View More <FaArrowDown className=" ms-2" />
           </button>
         </div>
       </section>
