@@ -18,7 +18,7 @@ function Home() {
         data-aos-delay="100"
         name="home"
         data-aos-duration="500"
-        className="top-0 duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen"
+        className="bg-slate-50 top-0 duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen"
       >
         <div className="area">
           <ul className="circles min-h-screen w-screen">
@@ -35,16 +35,16 @@ function Home() {
           </ul>
         </div>
 
-        <p className="text-gray-800 text-3xl sm:text-4xl font-bold tracking-tight">
+        <p className="text-gray-500 text-3xl sm:text-4xl font-medium tracking-tight antialiased">
           Hello, I'm
         </p>
-        <div className="text-center text-5xl sm:text-7xl font-black animate-float tracking-tight">
+        <div className="text-center text-5xl sm:text-7xl font-medium animate-float tracking-tight">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text py-2">
             {person.name}
           </h1>
         </div>
-        <div className="mx-auto text-center font-bold pb-4 tracking-tight">
-          <p className="max-w-[250px] text-3xl sm:max-w-full sm:text-4xl text-gray-800 ">
+        <div className="mx-auto text-center font-medium pb-4 tracking-tight">
+          <p className="max-w-[250px] text-3xl sm:max-w-full sm:text-4xl text-gray-500 ">
             {person.description}
           </p>
         </div>

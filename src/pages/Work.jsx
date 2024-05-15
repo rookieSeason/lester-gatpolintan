@@ -80,17 +80,17 @@ function Work() {
     },
   ];
   return (
-    <section className="min-w-screen min-h-screen bg-white justify-center items-center tracking-tight">
+    <section className="min-w-screen min-h-screen bg-slate-50 justify-center items-center tracking-tight">
       <div className="grid md:grid-cols-2 py-12 gap-1">
         <div className="flex justify-center items-center px-4">
           <Accordion items={works} />
         </div>
         <div className="my-auto w-full px-8">
-          <h1 className="animate-float font-bold text-left text-3xl sm:text-5xl text-gray-800">
+          <h1 className="font-medium text-left text-4xl sm:text-6xl text-gray-800">
             <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
             Journey
           </h1>
-          <p className="max-w-[600px] text-md sm:text-lg text-gray-700 my-4 text-justify">
+          <p className="max-w-[600px] text-md sm:text-lg text-gray-500 my-4 text-justify">
             Explore my diverse work experiences, ranging from internships to
             full-time roles across multiple industries. Each engagement
             showcases my skills, expertise, and achievements, contributing to a

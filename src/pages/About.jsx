@@ -13,16 +13,18 @@ function About() {
   return (
     <section
       name="about"
-      className="flex flex-col bg-white min-h-screen justify-center items-center min-w-screen sm:p-12"
+      className="flex flex-col bg-slate-50 min-h-screen justify-center items-center min-w-screen"
     >
       <div className="max-w-screen w-full grid md:grid-cols-2 gap-4 tracking-tight">
-        <div className="text-left px-8">
-          <h1 className="animate-float text-4xl font-bold text-left md:text-6xl text-gray-700 ">
-            I'm a, <span className="text-cyan-600">Software Engineer</span>
-          </h1>
-          <p className="mt-4 sm:text-md lg:text-lg text-gray-700 text-justify">
-            {about.greet}
-          </p>
+        <div className="w-full rounded-r-2xl shadow-xl bg-white pl-12">
+          <div className="text-left p-8">
+            <h1 className="text-4xl font-medium text-left md:text-6xl text-gray-700 ">
+              I'm a, <span className="text-cyan-600">Software Engineer</span>
+            </h1>
+            <p className="mt-4 sm:text-md lg:text-lg text-gray-500 text-justify">
+              {about.greet}
+            </p>
+          </div>
         </div>
         <div className="mx-auto px-4">
           <img src={avatar} height={305} width={373} />

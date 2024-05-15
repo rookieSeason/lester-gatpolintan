@@ -9,10 +9,10 @@ function Footer() {
     { id: 3, icon: <FaGithub />, name: "Github" },
   ];
   return (
-    <footer className="bg-white dark:bg-[#243447]">
+    <footer className="bg-slate-50">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-500 sm:text-center">
             © {new Date().getFullYear()}{" "}
             <a href="/" className="hover:underline">
               {name}™

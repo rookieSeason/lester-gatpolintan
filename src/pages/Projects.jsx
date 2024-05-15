@@ -34,20 +34,20 @@ function Projects() {
   return (
     <section
       name="projects"
-      className="flex flex-col bg-white dark:bg-[#243447] min-h-screen w-screen tracking-tight"
+      className="flex flex-col bg-slate-50 min-h-screen w-screen tracking-tight"
     >
-      <h1 className="animate-float pl-8 font-bold text-left sm:pl-24 text-4xl sm:text-5xl text-gray-800 pt-8">
+      <h1 className="pl-8 font-medium text-left sm:pl-24 text-4xl sm:text-6xl text-gray-800 pt-8">
         Featured{" "}
         <span className="text-cyan-600 dark:text-cyan-400">Projects</span>
       </h1>
-      <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-700 my-4">
+      <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 my-4">
         Here are my projects that i worked before
       </p>
-      <div className="w-full px-4 md:px-28 grid md:grid-cols-3 gap-4 py-4">
+      <div className="w-full px-4 md:px-28 grid md:grid-cols-3 gap-8 py-4">
         {projects.map((project) => {
           return (
             <div
-              className="shadow-md p-8 border border-gray-300 dark:border-gray-400"
+              className="shadow-xl p-8 rounded-2xl bg-white"
               key={project.id}
             >
               <h4 className="font-semibold text-lg sm:text-xl text-gray-600 dark:text-gray-300">
@@ -59,7 +59,7 @@ function Projects() {
               <p className="text-sm sm:text-md text-gray-500 dark:text-gray-400">
                 {project.technologies}
               </p>
-              <button className="bg-[#2b3137] hover:bg-gray-700 hover:scale-105 duration-300 flex items-center gap-2 p-2 mt-2 text-gray-200 text-sm border border-gray-400">
+              <button className="bg-[#2b3137] rounded-xl hover:bg-gray-700 hover:scale-105 duration-300 flex items-center gap-2 p-2 mt-2 text-gray-200 text-sm">
                 {project.link} <FaGithub className="text-xl" />
               </button>
             </div>

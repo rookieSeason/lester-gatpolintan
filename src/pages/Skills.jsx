@@ -38,7 +38,7 @@ function Skills() {
       "Skilled in JavaScript, React, and Express for building dynamic web applications. Proficient in SQL and Sequelize for database management. Experienced in Vite and Node.js for efficient development and server-side scripting. Familiar with Tailwind CSS for responsive styling. Utilizes Git for version control and collaboration. Additionally, possesses knowledge in PHP for server-side scripting.",
   };
   return (
-    <section className="flex flex-col-reverse min-h-screen min-w-screen bg-white justify-center items-center sm:p-12">
+    <section className="flex flex-col-reverse min-h-screen min-w-screen bg-slate-50 justify-center items-center sm:p-12">
       <div className="max-w-screen w-full grid md:grid-cols-2 gap-4 tracking-tight">
         <span className="mx-auto sm:flex flex-col items-center justify-center">
           <div className="sm:max-w-[700px] justify-center items-center w-full grid grid-cols-4 gap-4 px-8 text-gray-500">
@@ -46,10 +46,10 @@ function Skills() {
               return (
                 <div
                   key={skills.id}
-                  className="flex items-center gap-4 border border-cyan-600 p-4 hover:-rotate-6 duration-300"
+                  className="flex items-center gap-8 rounded-xl shadow-lg bg-white p-4 hover:-rotate-6 duration-300"
                   title={skills.name}
                 >
-                  <span className="text-gray-700 text-4xl">{skills.icon}</span>
+                  <span className="text-gray-600 text-5xl">{skills.icon}</span>
                   {/* <span className="hidden xl:block text-gray-700 text-md ">
                     {skills.name}
                   </span> */}
@@ -58,11 +58,12 @@ function Skills() {
             })}
           </div>
         </span>
-        <div className="px-8 text-justify justify-center items-center">
-          <h1 className="text-gray-800 text-4xl sm:text-5xl font-bold mb-4">
+
+        <div className="p-8 text-justify justify-center items-center ">
+          <h1 className="text-gray-800 text-4xl sm:text-6xl font-medium mb-4">
             Featured <span className="text-cyan-600">Skills</span>
           </h1>
-          <span className="text-md sm:text-lg text-gray-700">
+          <span className="text-md sm:text-lg text-gray-500">
             {skillDescription.description}
           </span>
         </div>
