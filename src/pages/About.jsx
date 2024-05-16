@@ -15,8 +15,8 @@ function About() {
       name="about"
       className="flex flex-col bg-slate-50 min-h-screen justify-center items-center min-w-screen"
     >
-      <div className="max-w-screen w-full grid md:grid-cols-2 gap-4 tracking-tight">
-        <div className="w-full rounded-r-2xl shadow-xl bg-white pl-12">
+      <div className="max-w-screen w-full grid md:grid-cols-2 gap-8 tracking-tight">
+        <div className="w-full sm:pl-12">
           <div className="text-left p-8">
             <h1 className="text-4xl font-medium text-left md:text-6xl text-gray-700 ">
               I'm a, <span className="text-cyan-600">Software Engineer</span>
@@ -26,8 +26,8 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="mx-auto px-4">
-          <img src={avatar} height={305} width={373} />
+        <div className="bg-white rounded-l-2xl shadow-lg w-full">
+          <img src={avatar} height={308} width={376} className="mx-auto py-8" />
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 import logo1 from "../assets/logo1.png";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { Link } from "react-scroll";
 function Home() {
   AOS.init();
 
@@ -21,7 +22,7 @@ function Home() {
         className="bg-slate-50 top-0 duration-300 flex flex-col mx-auto justify-center items-center min-h-screen w-screen"
       >
         <div className="area">
-          <ul className="circles min-h-screen w-screen">
+          <ul className="circles min-h-screen w-screen blur-sm">
             <li className="bg-gray-300"></li>
             <li className="bg-gray-300"></li>
             <li className="bg-gray-300"></li>
@@ -38,7 +39,7 @@ function Home() {
         <p className="text-gray-500 text-3xl sm:text-4xl font-medium tracking-tight antialiased">
           Hello, I'm
         </p>
-        <div className="text-center text-5xl sm:text-7xl font-medium animate-float tracking-tight">
+        <div className="text-center text-5xl sm:text-8xl font-medium animate-float tracking-tight">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text py-2">
             {person.name}
           </h1>
@@ -49,12 +50,16 @@ function Home() {
           </p>
         </div>
         <div className="mx-auto py-2">
-          <button className="inline-flex items-center bg-cyan-500 text-gray-100 p-3 rounded-lg hover:scale-105 duration-300 text-md me-3">
+          {/* <button className="inline-flex items-center bg-cyan-500 text-gray-100 p-3 rounded-lg hover:scale-105 duration-300 text-md me-3">
             Download CV <MdDownload className=" ms-2" />
-          </button>
-          <button className="inline-flex items-center border border-cyan-500 text-cyan-500 p-3 rounded-lg hover:scale-105 duration-300 text-md">
+          </button> */}
+          <Link
+            to="about"
+            smooth={true}
+            className="inline-flex items-center bg-[#4285F4] text-gray-100 rounded-full p-4 hover:bg-blue-600 duration-300"
+          >
             View More <FaArrowDown className=" ms-2" />
-          </button>
+          </Link>
         </div>
       </section>
     </>

@@ -13,23 +13,36 @@ function Work() {
       responsibilities: (
         <ul className="list-disc px-4">
           <li>
-            Associates in building web application with Microservices
-            Architecture Design.
-          </li>
-          <li>Optimising databases queries for a better performance.</li>
-          <li>
-            Worked with dynamic user interface design that can be easily
-            navigate by users.
+            Collaborated with a team to build web applications using a
+            microservices architecture design.
           </li>
           <li>
-            Exposed in testing different API endpoints for data processing.
+            Improved database performance by optimizing queries through
+            techniques like using ORM and refactoring the code.
           </li>
           <li>
-            Implement features in a different technology coming from existing
-            projects.
+            Utilized React JS to create intuitive, user-friendly interfaces that
+            prioritized accessibility and ease of navigation.
           </li>
-          <li>Challenged in some complex tasks for growth.</li>
-          <li>Resolved issues while migrating data for new application.</li>
+          <li>
+            Tested and validated various API endpoints, ensuring seamless data
+            processing and integration for web applicatiion.
+          </li>
+          <li>
+            Successfully adapted and implemented existing project features using
+            new technologies, demonstrating a strong ability to learn and apply
+            new skills.
+          </li>
+          <li>
+            Embraced challenging assignments as opportunities for growth,
+            adapting quickly to new technologies and methodologies to achieve
+            successful outcomes.
+          </li>
+          <li>
+            RIdentified and resolved data inconsistencies and errors during
+            migration to a new application, ensuring a smooth transition and
+            accurate data transfer.
+          </li>
         </ul>
       ),
       technologies: (
@@ -81,16 +94,16 @@ function Work() {
   ];
   return (
     <section className="min-w-screen min-h-screen bg-slate-50 justify-center items-center tracking-tight">
-      <div className="grid md:grid-cols-2 py-12 gap-1">
+      <div className="grid md:grid-cols-2 py-12 gap-8">
         <div className="flex justify-center items-center px-4">
           <Accordion items={works} />
         </div>
-        <div className="my-auto w-full px-8">
+        <div className="w-full px-8">
           <h1 className="font-medium text-left text-4xl sm:text-6xl text-gray-800">
             <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
             Journey
           </h1>
-          <p className="max-w-[600px] text-md sm:text-lg text-gray-500 my-4 text-justify">
+          <p className="max-w-[535px] text-md sm:text-lg text-gray-500 my-4 text-justify">
             Explore my diverse work experiences, ranging from internships to
             full-time roles across multiple industries. Each engagement
             showcases my skills, expertise, and achievements, contributing to a
