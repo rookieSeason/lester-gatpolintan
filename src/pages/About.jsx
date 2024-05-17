@@ -19,7 +19,10 @@ function About() {
         <div className="w-full sm:pl-12">
           <div className="text-left p-8">
             <h1 className="text-4xl font-medium text-left md:text-6xl text-gray-700 ">
-              I'm a, <span className="text-cyan-600">Software Engineer</span>
+              I'm a,{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text">
+                Software Engineer
+              </span>
             </h1>
             <p className="mt-4 sm:text-md lg:text-lg text-gray-500 text-justify">
               {about.greet}

@@ -62,7 +62,10 @@ function Skills() {
 
         <div className="max-w-[600px] text-justify justify-center items-center px-8">
           <h1 className="text-gray-800 text-4xl sm:text-6xl font-medium mb-4">
-            Featured <span className="text-cyan-600">Skills</span>
+            Featured{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text">
+              Skills
+            </span>
           </h1>
           <span className="text-md sm:text-lg text-gray-500">
             {skillDescription.description}

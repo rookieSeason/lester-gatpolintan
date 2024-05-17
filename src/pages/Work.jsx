@@ -100,7 +100,9 @@ function Work() {
         </div>
         <div className="w-full px-8">
           <h1 className="font-medium text-left text-4xl sm:text-6xl text-gray-800">
-            <span className="text-cyan-600 dark:text-cyan-400">Career</span>{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text">
+              Career
+            </span>{" "}
             Journey
           </h1>
           <p className="max-w-[535px] text-md sm:text-lg text-gray-500 my-4 text-justify">

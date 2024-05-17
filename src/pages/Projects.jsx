@@ -56,7 +56,9 @@ function Projects() {
       <div>
         <h1 className="pl-8 font-medium text-left sm:pl-24 text-4xl sm:text-6xl text-gray-800 pt-8">
           Featured{" "}
-          <span className="text-cyan-600 dark:text-cyan-400">Projects</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text">
+            Projects
+          </span>
         </h1>
         <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 my-4">
           Here are my projects that i worked before
@@ -72,14 +74,12 @@ function Projects() {
                   <h4 className="font-medium text-lg sm:text-xl text-gray-600 ">
                     {project.name}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    {project.description}
-                  </p>
+                  <p className="text-gray-400">{project.description}</p>
                   <p className="flex flex-row justify-center space-x-3 text-3xl">
                     {project.icons.map((icon, index) => (
                       <div
                         key={index}
-                        className=" text-gray-500 hover:text-gray-600 duration-300"
+                        className=" text-gray-400 hover:text-gray-600 duration-300"
                       >
                         {icon}
                       </div>
