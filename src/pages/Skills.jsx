@@ -12,7 +12,6 @@ import {
   SiExpress,
   SiTailwindcss,
   SiVite,
-  SiLaravel,
 } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
 import { DiLaravel } from "react-icons/di";

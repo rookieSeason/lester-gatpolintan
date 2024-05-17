@@ -1,4 +1,15 @@
-import { FaGithub } from "react-icons/fa";
+import React from "react";
+
+import { FaGithub, FaHtml5, FaBootstrap, FaCss3 } from "react-icons/fa";
+// import { RiJavascriptFill } from "react-icons/ri";
+import { DiLaravel, DiMysql } from "react-icons/di";
+import {
+  SiMysql,
+  SiPhp,
+  SiTailwindcss,
+  SiAlpinedotjs,
+  SiJavascript,
+} from "react-icons/si";
 
 function Projects() {
   const projects = [
@@ -6,29 +17,35 @@ function Projects() {
       id: 1,
       name: "Online Relocation MIS",
       description: "Capstone Project",
-      technologies: "PHP, My SQL, Bootstrap",
-      link: "View on Github",
+      link: "https://github.com/rookieSeason/Online-Relocation-MIS.git",
+      icons: [
+        <SiPhp title="Php" />,
+        <DiMysql title="My SQL" />,
+        <FaBootstrap title="Bootstrap" />,
+      ],
     },
     {
       id: 2,
       name: "Basic Student System",
       description: "Basic CRUD Practices",
-      technologies: "Laravel, Tailwind, Alpine, My SQL",
-      link: "View on Github",
+      link: "https://github.com/rookieSeason/laravel_practice.git",
+      icons: [
+        <DiLaravel title="Laravel" />,
+        <SiTailwindcss title="Tailwind CSS" />,
+        <SiAlpinedotjs title="Alpine JS" />,
+        <DiMysql title="My SQL" />,
+      ],
     },
     {
       id: 3,
       name: "Personal Portfolio Webiste",
       description: "Personal Website",
-      technologies: "HTML, CSS, JavaScript",
-      link: "View on Github",
-    },
-    {
-      id: 4,
-      name: "Air Fibr Queueing System",
-      description: "School Project",
-      technologies: "ASP.NET, HTML, CSS, Data Tables",
-      link: "View on Github",
+      link: "https://github.com/rookieSeason/Portfolio.git",
+      icons: [
+        <FaHtml5 title="HTML 5" />,
+        <FaCss3 title="CSS 3" />,
+        <SiJavascript title="JavaScript" />,
+      ],
     },
   ];
   return (
@@ -48,21 +65,35 @@ function Projects() {
           {projects.map((project) => {
             return (
               <div
-                className="shadow-xl p-8 rounded-2xl bg-white hover:-rotate-3 duration-300"
+                className="shadow-xl p-8 rounded-2xl bg-white"
                 key={project.id}
               >
-                <h4 className="font-medium text-lg sm:text-xl text-gray-600 ">
-                  {project.name}
-                </h4>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {project.description}
-                </p>
-                <p className="text-sm sm:text-md text-gray-500 ">
-                  {project.technologies}
-                </p>
-                <button className="bg-[#2b3137] rounded-full hover:bg-gray-700 hover:scale-105 duration-300 flex items-center gap-2 p-3 mt-2 text-gray-200 text-sm">
-                  {project.link} <FaGithub className="text-xl" />
-                </button>
+                <div className="text-center w-full">
+                  <h4 className="font-medium text-lg sm:text-xl text-gray-600 ">
+                    {project.name}
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {project.description}
+                  </p>
+                  <p className="flex flex-row justify-center space-x-3 text-3xl">
+                    {project.icons.map((icon, index) => (
+                      <div
+                        key={index}
+                        className=" text-gray-500 hover:text-gray-600 duration-300"
+                      >
+                        {icon}
+                      </div>
+                    ))}
+                  </p>
+                  <div className="mt-2">
+                    <a
+                      href={project.link}
+                      className="text-gray-200 inline-flex bg-gray-800 hover:bg-gray-700 font-medium rounded-full text-sm px-2.5 py-2.5"
+                    >
+                      View on Github <FaGithub className="text-xl ms-2" />
+                    </a>
+                  </div>
+                </div>
               </div>
             );
           })}
