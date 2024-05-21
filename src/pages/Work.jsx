@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBriefcase } from "react-icons/fa";
 import Accordion from "../components/Accordion";
 
 function Work() {
@@ -93,7 +92,7 @@ function Work() {
     },
   ];
   return (
-    <section className="min-w-screen min-h-screen bg-slate-50 justify-center items-center tracking-tight">
+    <section className="w-screen min-h-screen bg-slate-50 justify-center items-center tracking-tight scroll-smooth">
       <div className="grid md:grid-cols-2 py-12 gap-8">
         <div className="flex justify-center items-center px-4">
           <Accordion items={works} />

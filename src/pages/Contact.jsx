@@ -4,7 +4,7 @@ function Contact() {
   return (
     <section
       name="contact"
-      className="bg-slate-50 flex flex-col justify-center items-center min-h-screen min-w-screen"
+      className="bg-slate-50 flex flex-col justify-center items-center min-h-screen w-screen scroll-smooth"
     >
       <div className="text-center text-5xl sm:text-7xl font-medium tracking-tight">
         <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text py-2">

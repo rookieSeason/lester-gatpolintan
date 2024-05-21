@@ -13,9 +13,9 @@ function About() {
   return (
     <section
       name="about"
-      className="flex flex-col bg-slate-50 min-h-screen justify-center items-center min-w-screen"
+      className="flex flex-col bg-slate-50 min-h-screen justify-center items-center w-screen scroll-smooth"
     >
-      <div className="max-w-screen w-full grid md:grid-cols-2 gap-8 tracking-tight">
+      <div className="w-full grid md:grid-cols-2 gap-8 tracking-tight">
         <div className="w-full sm:pl-12">
           <div className="text-left p-8">
             <h1 className="text-4xl font-medium text-left md:text-6xl text-gray-700 ">

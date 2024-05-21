@@ -38,7 +38,7 @@ function Footer() {
   return (
     <footer className="bg-slate-50">
       <div className="mx-auto w-full max-w-screen-xl py-6 px-4">
-        <div className="sm:flex sm:items-center sm:justify-between">
+        <div className="text-center sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center">
             © {new Date().getFullYear()}{" "}
             <a href="/" className="hover:underline">

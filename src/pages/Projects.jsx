@@ -51,7 +51,7 @@ function Projects() {
   return (
     <section
       name="projects"
-      className="flex flex-col bg-slate-50 min-h-screen w-screen tracking-tight"
+      className="flex flex-col bg-slate-50 min-h-screen w-screen tracking-tight scroll-smooth"
     >
       <div>
         <h1 className="pl-8 font-medium text-left sm:pl-24 text-4xl sm:text-6xl text-gray-800 pt-8">
@@ -74,12 +74,12 @@ function Projects() {
                   <h4 className="font-medium text-lg sm:text-xl text-gray-600 ">
                     {project.name}
                   </h4>
-                  <p className="text-gray-400">{project.description}</p>
+                  <p className="text-gray-500">{project.description}</p>
                   <p className="flex flex-row justify-center space-x-3 text-3xl">
                     {project.icons.map((icon, index) => (
                       <div
                         key={index}
-                        className=" text-gray-400 hover:text-gray-600 duration-300"
+                        className=" text-gray-500 hover:text-gray-600 duration-300"
                       >
                         {icon}
                       </div>

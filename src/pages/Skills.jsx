@@ -37,7 +37,7 @@ function Skills() {
       "Skilled in JavaScript, React, and Express for building dynamic web applications. Proficient in SQL and Sequelize for database management. Experienced in Vite and Node.js for efficient development and server-side scripting. Familiar with Tailwind CSS for responsive styling. Utilizes Git for version control and collaboration. Additionally, possesses knowledge in PHP for server-side scripting.",
   };
   return (
-    <section className="flex flex-col-reverse min-h-screen min-w-screen bg-slate-50 justify-center items-center sm:p-12">
+    <section className="flex flex-col-reverse min-h-screen w-screen bg-slate-50 justify-center items-center sm:p-12 scroll-smooth">
       <div className="max-w-screen w-full grid md:grid-cols-2 gap-8 tracking-tight">
         <span className="mx-auto sm:flex flex-col items-center justify-center">
           <div className="sm:max-w-[700px] justify-center items-center w-full grid grid-cols-4 gap-4 px-8 text-gray-500">
