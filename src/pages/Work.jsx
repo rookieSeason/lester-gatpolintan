@@ -34,11 +34,11 @@ function Work() {
           </li>
           <li>
             Embraced challenging assignments as opportunities for growth,
-            adapting quickly to new technologies and methodologies to achieve
-            successful outcomes.
+            adapting to new technologies and methodologies to achieve successful
+            outcomes.
           </li>
           <li>
-            RIdentified and resolved data inconsistencies and errors during
+            Identified and resolved data inconsistencies and errors during
             migration to a new application, ensuring a smooth transition and
             accurate data transfer.
           </li>
