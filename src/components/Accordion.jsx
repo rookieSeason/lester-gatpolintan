@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/1go-logo.png";
 
 const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -11,19 +12,24 @@ const Accordion = ({ items }) => {
     <div className="w-full max-w-lg mx-auto ">
       {items.map((item, index) => (
         <div key={index}>
-          <span className="text-gray-500">{item.date}</span>
-          <div className="bg-white dark:bg-gray-700 rounded-xl shadow-xl mb-4">
+          <span className="text-gray-500 dark:text-gray-400">{item.date}</span>
+          <div className="bg-white dark:bg-[#424242] rounded-xl shadow-xl mb-4">
             <button
               onClick={() => toggleAccordion(index)}
               className="w-full flex items-center justify-between p-4 focus:outline-none"
             >
-              <span className="text-md font-medium text-gray-700">
+              <img
+                src={item.image}
+                alt=" "
+                className="w-18 h-8 border border-gray-300 dark:border-gray-500 rounded-md p-0.5"
+              />
+              <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
                 {item.position} &#x2022;{" "}
                 <span className="text-gray-500 dark:text-gray-400">
                   {item.company}
                 </span>
               </span>
-              <span className="text-gray-700 text-sm sm:text-md">
+              <span className="text-gray-500 dark:text-gray-400 text-sm sm:text-md">
                 {item.employment}
               </span>
               <svg
@@ -54,7 +60,7 @@ const Accordion = ({ items }) => {
                 overflow: "hidden",
               }}
             >
-              <span className="text-gray-600 text-sm sm:text-md">
+              <span className="text-gray-500 dark:text-gray-300 text-sm sm:text-md">
                 {item.responsibilities}
               </span>
             </div>

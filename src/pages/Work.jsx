@@ -1,14 +1,15 @@
 import React from "react";
 import Accordion from "../components/Accordion";
-
+import logo from "../assets/1go-logo.png";
 function Work() {
   const works = [
     {
       id: 1,
-      position: "Junior Software Developer",
+      position: "Junior Web Developer",
       company: "In1go Technologies Inc.",
       date: "Sep 2023 - Present",
       employment: "Full-Time",
+      image: logo,
       responsibilities: (
         <ul className="list-disc px-4">
           <li>
@@ -92,19 +93,19 @@ function Work() {
     },
   ];
   return (
-    <section className="w-screen min-h-screen bg-slate-50 justify-center items-center tracking-tight scroll-smooth">
+    <section className="w-screen min-h-screen bg-slate-50 dark:bg-[#303030] justify-center items-center tracking-tight scroll-smooth">
       <div className="grid md:grid-cols-2 py-12 gap-8">
         <div className="flex justify-center items-center px-4">
           <Accordion items={works} />
         </div>
         <div className="w-full px-8">
-          <h1 className="font-medium text-left text-4xl sm:text-6xl text-gray-800">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text">
+          <h1 className="font-medium text-left text-4xl sm:text-6xl text-gray-600 dark:text-gray-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300 animate-text">
               Career
             </span>{" "}
             Journey
           </h1>
-          <p className="max-w-[535px] text-md sm:text-lg text-gray-500 my-4 text-justify">
+          <p className="max-w-[535px] text-md sm:text-lg text-gray-500 dark:text-gray-300 my-4 text-justify">
             Explore my diverse work experiences, ranging from internships to
             full-time roles across multiple industries. Each engagement
             showcases my skills, expertise, and achievements, contributing to a

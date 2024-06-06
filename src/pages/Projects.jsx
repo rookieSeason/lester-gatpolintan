@@ -51,35 +51,37 @@ function Projects() {
   return (
     <section
       name="projects"
-      className="flex flex-col bg-slate-50 min-h-screen w-screen tracking-tight scroll-smooth"
+      className="flex flex-col bg-slate-50 dark:bg-[#303030] min-h-screen w-screen tracking-tight scroll-smooth"
     >
       <div>
-        <h1 className="pl-8 font-medium text-left sm:pl-24 text-4xl sm:text-6xl text-gray-800 pt-8">
+        <h1 className="pl-8 font-medium text-left sm:pl-24 text-4xl sm:text-6xl text-gray-600 dark:text-gray-300 pt-8">
           Featured{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-cyan-400 animate-text">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300 animate-text">
             Projects
           </span>
         </h1>
-        <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-600 my-4">
+        <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-500 dark:text-gray-300 my-4">
           Here are my projects that i worked before
         </p>
         <div className="w-full px-4 md:px-28 grid md:grid-cols-3 gap-8 py-4">
           {projects.map((project) => {
             return (
               <div
-                className="shadow-xl p-8 rounded-2xl bg-white"
+                className="shadow-xl p-8 rounded-2xl bg-white dark:bg-[#424242]"
                 key={project.id}
               >
                 <div className="text-center w-full">
-                  <h4 className="font-medium text-lg sm:text-xl text-gray-600 ">
+                  <h4 className="font-medium text-lg sm:text-xl text-gray-600 dark:text-gray-300 ">
                     {project.name}
                   </h4>
-                  <p className="text-gray-500">{project.description}</p>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    {project.description}
+                  </p>
                   <p className="flex flex-row justify-center space-x-3 text-3xl">
                     {project.icons.map((icon, index) => (
                       <div
                         key={index}
-                        className=" text-gray-500 hover:text-gray-600 duration-300"
+                        className=" text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 duration-300"
                       >
                         {icon}
                       </div>
