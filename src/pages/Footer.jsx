@@ -57,7 +57,7 @@ function Footer() {
     },
   ];
   return (
-    <footer className="bg-slate-50 dark:bg-[#424242]">
+    <footer className="bg-white dark:bg-[#424242]">
       <div className="mx-auto w-full max-w-screen-xl py-6 px-4">
         <div className="text-center sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-600 dark:text-gray-400 sm:text-center">
