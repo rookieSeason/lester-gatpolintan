@@ -1,6 +1,8 @@
 import React from "react";
 import Accordion from "../components/Accordion";
-import logo from "../assets/1go-logo.png";
+import in1go from "../assets/1gos-logo.png";
+import pcm from "../assets/pcm-logo.png";
+
 function Work() {
   const works = [
     {
@@ -9,7 +11,7 @@ function Work() {
       company: "In1go Technologies Inc.",
       date: "Sep 2023 - Present",
       employment: "Full-Time",
-      image: logo,
+      image: in1go,
       responsibilities: (
         <ul className="list-disc px-4">
           <li>
@@ -62,6 +64,7 @@ function Work() {
       company: "Phosclay Chemical Mfg.",
       date: "Mar 2023 - Jun 2023",
       employment: "Internship",
+      image: pcm,
       responsibilities: (
         <ul className="list-disc px-4">
           <li>

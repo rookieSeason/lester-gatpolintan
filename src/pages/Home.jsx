@@ -50,12 +50,12 @@ function Home() {
           </p>
         </div>
         <div className="mx-auto py-2">
-          <button
+          {/* <button
             type="button"
             className="inline-flex items-center bg-white dark:bg-[#424242] text-gray-500 dark:text-gray-300 border border-gray-400 p-4 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 duration-300 text-md me-3"
           >
             Download CV <MdDownload className=" ms-2" />
-          </button>
+          </button> */}
           <Link
             type="button"
             to="about"

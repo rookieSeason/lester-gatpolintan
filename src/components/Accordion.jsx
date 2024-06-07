@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/1go-logo.png";
 
 const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -21,7 +20,7 @@ const Accordion = ({ items }) => {
               <img
                 src={item.image}
                 alt=" "
-                className="w-18 h-8 border border-gray-300 dark:border-gray-500 rounded-md p-0.5"
+                className="w-12 h-12 border border-gray-300 dark:border-gray-500 rounded-full p-0.5"
               />
               <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
                 {item.position} &#x2022;{" "}
