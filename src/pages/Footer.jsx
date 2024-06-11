@@ -9,20 +9,6 @@ import {
 import { MdSunny } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   const name = "Lester John Gatpolintan";
   const socials = [
     {
@@ -57,7 +43,7 @@ function Footer() {
     },
   ];
   return (
-    <footer className="bg-white dark:bg-[#424242]">
+    <footer className="bg-slate-50 dark:bg-[#424242]">
       <div className="mx-auto w-full max-w-screen-xl py-6 px-4">
         <div className="text-center sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-600 dark:text-gray-400 sm:text-center">
@@ -79,12 +65,6 @@ function Footer() {
                 </a>
               );
             })}
-            <button
-              onClick={toggleDarkMode}
-              className="text-gray-500 hover:text-gray-600 dark:text-gray-400 text-xl dark:hover:text-gray-300"
-            >
-              {isDarkMode ? <MdSunny /> : <FaMoon />}
-            </button>
           </div>
         </div>
       </div>

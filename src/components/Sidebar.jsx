@@ -1,44 +1,32 @@
-import React from "react";
-import { FaHome, FaUserCircle, FaPhone, FaBriefcase } from "react-icons/fa";
-import { Link } from "react-scroll";
+import React, { useState, useEffect } from "react";
+
+import { FaMoon } from "react-icons/fa";
+import { MdSunny } from "react-icons/md";
+
 function Sidebar() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <aside className="hidden md:flex fixed shadow-lg translate-y-1/2 border border-gray-400 rounded-full flex-col w-16 h-72 left-2 px-5 py-6 bg-white dark:bg-gray-700 dark:border-gray-600 duration-300 z-20">
-      <div className="flex flex-col justify-between flex-1 mt-6">
-        <nav className="-mx-3">
-          <div className="space-y-3 ">
-            <Link
-              to="nav"
-              smooth={true}
-              className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-            >
-              <FaHome className="text-xl" />
-            </Link>
-            <Link
-              to="about"
-              smooth={true}
-              className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-            >
-              <FaUserCircle className="text-xl" />
-            </Link>
-            <Link
-              to="projects"
-              smooth={true}
-              className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-            >
-              <FaBriefcase className="text-xl" />
-            </Link>
-            <Link
-              to="contact"
-              smooth={true}
-              className="flex items-center px-3 py-2 text-gray-500 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-            >
-              <FaPhone className="text-xl" />
-            </Link>
-          </div>
-        </nav>
-      </div>
-    </aside>
+    <div>
+      <button
+        onClick={() => toggleDarkMode()}
+        class="z-20 fixed bottom-20 right-8 text-2xl text-center border border-gray-300 bg-white text-gray-600 p-4 shadow-md rounded-full hover:bg-gray-300 dark:bg-[#424242] dark:hover:bg-gray-700 dark:text-gray-300"
+      >
+        {isDarkMode ? <MdSunny /> : <FaMoon />}
+      </button>
+    </div>
   );
 }
 
