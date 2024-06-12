@@ -18,10 +18,10 @@ function About() {
       <div className="w-full grid md:grid-cols-2 gap-8 tracking-tight">
         <div className="w-full sm:pl-12">
           <div className="text-left p-8">
-            <h1 className="text-4xl font-medium text-left md:text-7xl text-gray-600 dark:text-gray-300 ">
+            <h1 className="text-5xl font-medium text-left md:text-[80px] text-gray-600 dark:text-gray-300 ">
               I'm a,{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300 animate-text">
-                Software Engineer
+                Web Developer
               </span>
             </h1>
             <p className="mt-4 sm:text-md lg:text-lg text-gray-500 dark:text-gray-300 text-justify">

@@ -11,7 +11,7 @@ function Contact() {
           Let's work together!
         </h1>
       </div>
-      <div className="mx-auto text-center font-medium pb-4 tracking-tight">
+      <div className="mx-auto text-center font-medium pt-4 tracking-tight">
         <p className="max-w-[250px] text-2xl sm:max-w-full sm:text-4xl text-gray-500 dark:text-gray-300 ">
           I may not looking for any other opportunities, <br />I am willing to
           collaborate with you.

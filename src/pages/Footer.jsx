@@ -43,7 +43,7 @@ function Footer() {
     },
   ];
   return (
-    <footer className="bg-slate-50 dark:bg-[#424242]">
+    <footer className="bg-white dark:bg-[#424242]">
       <div className="mx-auto w-full max-w-screen-xl py-6 px-4">
         <div className="text-center sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-600 dark:text-gray-400 sm:text-center">
@@ -53,7 +53,7 @@ function Footer() {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0 space-x-2">
+          <div className="inline-flex text-center sm:flex mt-4 sm:justify-center sm:mt-0 space-x-2">
             {socials.map((social) => {
               return (
                 <a
