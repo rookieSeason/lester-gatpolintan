@@ -13,13 +13,11 @@ function Projects() {
             Projects
           </span>
         </h1>
-        <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-500 dark:text-gray-300 my-4">
+        <p className="pl-8 sm:pl-24 text-md sm:text-xl text-gray-500 dark:text-gray-300 my-2">
           Here are my projects that i worked before
         </p>
       </div>
-      <div>
-        <Devices />
-      </div>
+      <Devices />
     </section>
   );
 }

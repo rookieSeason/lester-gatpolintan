@@ -17,19 +17,19 @@ const Devices = () => {
   };
   return (
     <>
-      <div className="min-h-screen w-screen">
+      <div className="w-screen">
         <div className="flex flex-col items-center justify-center w-full">
           <div className="grid md:grid-cols-2 gap-12 py-8">
             <div className="w-full px-8 my-auto sm:pl-24">
               <h3 className="text-2xl sm:text-3xl font-medium text-gray-600 dark:text-gray-300">
                 {project1.name}
               </h3>
-              <p className="text-md sm:text-xl text-gray-500 dark:text-gray-300 text-justify mt-4">
+              <p className="text-md sm:text-lg text-gray-500 dark:text-gray-300 text-justify mt-4">
                 {project1.details}
               </p>
             </div>
             <div className="w-full px-4">
-              <figure className="ms-auto me-20 top-8 relative z-[1] max-w-[600px] w-full h-auto rounded-b-lg">
+              <figure className="ms-auto me-20 top-8 relative z-[1] max-w-[600px] w-full h-auto rounded-b-lg sm:pr-8">
                 <div className="relative flex items-center max-w-[600px] bg-gray-800 rounded-t-2xl py-2 px-24 dark:bg-neutral-100">
                   <div className="flex space-x-1 absolute top-2/4 start-4 -translate-y-1">
                     <span className="size-2 bg-gray-600 rounded-full dark:bg-neutral-300"></span>
@@ -80,7 +80,7 @@ const Devices = () => {
               <h3 className="text-2xl sm:text-3xl font-medium text-gray-600 dark:text-gray-300">
                 {project2.name}
               </h3>
-              <p className="text-md sm:text-xl text-gray-500 dark:text-gray-300 text-justify mt-4">
+              <p className="text-md sm:text-lg text-gray-500 dark:text-gray-300 text-justify mt-4">
                 {project2.details}
               </p>
             </div>
