@@ -1,19 +1,24 @@
 import React from "react";
 import landing from "../assets/landing-picsay.jpg";
 import laravel from "../assets/laravel_practice.png";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-scroll";
+
 const Devices = () => {
   const project1 = {
-    name: "Online Relocation MIS",
+    name: "Online Relocation Management Information System",
     details:
       "A Capstone Project that build to help User to speed-up the relocation process by uploading necessary documents and reduce human errors",
     webLinks: "hudrd-mis.online",
+    githubLink: "https://github.com/rookieSeason/Online-Relocation-MIS.git",
   };
 
   const project2 = {
-    name: "Student System",
+    name: "Student Information System",
     details:
       "A web application that built in Laravel 10 to help the user to manage the student information by using CRUD operations",
     webLinks: "localhost:8080",
+    githubLink: "https://github.com/rookieSeason/laravel_practice.git",
   };
   return (
     <>
@@ -27,7 +32,15 @@ const Devices = () => {
               <p className="text-md sm:text-lg text-gray-500 dark:text-gray-300 text-justify mt-4">
                 {project1.details}
               </p>
+              <Link
+                to={project1.githubLink}
+                type="button"
+                className="inline-flex items-center my-3 hover:bg-gray-800 text-gray-600 hover:text-gray-100 dark:text-gray-300 dark:hover:text-gray-600 duration-300 dark:hover:bg-gray-100 hover:rounded-full p-3"
+              >
+                View in Github <FaLongArrowAltRight className="ms-2" />
+              </Link>
             </div>
+
             <div className="w-full px-4">
               <figure className="ms-auto me-20 top-8 relative z-[1] max-w-[600px] w-full h-auto rounded-b-lg sm:pr-8">
                 <div className="relative flex items-center max-w-[600px] bg-gray-800 rounded-t-2xl py-2 px-24 dark:bg-neutral-100">
@@ -36,7 +49,7 @@ const Devices = () => {
                     <span className="size-2 bg-gray-600 rounded-full dark:bg-neutral-300"></span>
                     <span className="size-2 bg-gray-600 rounded-full dark:bg-neutral-300"></span>
                   </div>
-                  <div className="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem] dark:bg-neutral-100 dark:text-neutral-600">
+                  <div className="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem] dark:bg-neutral-200 dark:text-neutral-600">
                     {project1.webLinks}
                   </div>
                 </div>
@@ -83,6 +96,13 @@ const Devices = () => {
               <p className="text-md sm:text-lg text-gray-500 dark:text-gray-300 text-justify mt-4">
                 {project2.details}
               </p>
+              <Link
+                to={project2.githubLink}
+                type="button"
+                className="inline-flex items-center my-3 hover:bg-gray-800 text-gray-600 hover:text-gray-100 dark:text-gray-300 dark:hover:text-gray-600 duration-300 dark:hover:bg-gray-100 hover:rounded-full p-3"
+              >
+                View in Github <FaLongArrowAltRight className="ms-2" />
+              </Link>
             </div>
           </div>
         </div>
