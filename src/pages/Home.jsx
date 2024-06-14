@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
 import { FaArrowDown } from "react-icons/fa";
-import logo1 from "../assets/logo1.png";
+import file from "../assets/Lester-John-Gatpolintan-Resume.pdf";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { Link } from "react-scroll";
@@ -12,6 +12,7 @@ function Home() {
     name: "Lester John Gatpolintan",
     description: "I build web application and provide efficient solutions",
   };
+
   return (
     <>
       <section
@@ -50,12 +51,14 @@ function Home() {
           </p>
         </div>
         <div className="mx-auto py-2">
-          {/* <button
+          <a
+            href={file}
             type="button"
-            className="inline-flex items-center bg-white dark:bg-[#424242] text-gray-500 dark:text-gray-300 border border-gray-400 p-4 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 duration-300 text-md me-3"
+            download
+            className="inline-flex items-center bg-white dark:bg-[#424242] text-gray-500 dark:text-gray-300 border border-gray-400 p-4 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 text-md me-3"
           >
             Download CV <MdDownload className=" ms-2" />
-          </button> */}
+          </a>
           <Link
             type="button"
             to="about"
