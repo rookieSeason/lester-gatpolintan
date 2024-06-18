@@ -37,7 +37,7 @@ function Home() {
           </ul>
         </div>
 
-        <p className="text-gray-500 dark:text-gray-300 text-3xl sm:text-4xl font-medium tracking-tight antialiased">
+        <p className="text-gray-600 dark:text-gray-300 text-3xl sm:text-5xl font-medium tracking-tight antialiased">
           Hello, I'm
         </p>
         <div className="text-center text-5xl sm:text-8xl font-medium animate-float tracking-tight">
@@ -46,7 +46,7 @@ function Home() {
           </h1>
         </div>
         <div className="mx-auto text-center font-medium pb-4 tracking-tight">
-          <p className="max-w-[250px] text-3xl sm:max-w-full sm:text-4xl text-gray-500 dark:text-gray-300 ">
+          <p className="max-w-[250px] text-3xl sm:max-w-full sm:text-5xl text-gray-600 dark:text-gray-300 ">
             {person.description}
           </p>
         </div>
