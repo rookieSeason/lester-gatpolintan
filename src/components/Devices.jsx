@@ -32,13 +32,13 @@ const Devices = () => {
               <p className="text-md sm:text-lg text-gray-500 dark:text-gray-300 text-justify mt-4">
                 {project1.details}
               </p>
-              <Link
-                to={project1.githubLink}
+              <a
+                href={project1.githubLink}
                 type="button"
                 className="inline-flex items-center my-3 hover:bg-gray-800 text-gray-600 hover:text-gray-100 dark:text-gray-300 dark:hover:text-gray-600 duration-300 dark:hover:bg-gray-100 hover:rounded-full p-3"
               >
                 View in Github <FaLongArrowAltRight className="ms-2" />
-              </Link>
+              </a>
             </div>
 
             <div className="w-full px-4">
@@ -96,13 +96,13 @@ const Devices = () => {
               <p className="text-md sm:text-lg text-gray-500 dark:text-gray-300 text-justify mt-4">
                 {project2.details}
               </p>
-              <Link
-                to={project2.githubLink}
+              <a
+                href={project2.githubLink}
                 type="button"
                 className="inline-flex items-center my-3 hover:bg-gray-800 text-gray-600 hover:text-gray-100 dark:text-gray-300 dark:hover:text-gray-600 duration-300 dark:hover:bg-gray-100 hover:rounded-full p-3"
               >
                 View in Github <FaLongArrowAltRight className="ms-2" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
