@@ -75,7 +75,7 @@ const Devices = () => {
                     <span className="size-2 bg-gray-600 rounded-full dark:bg-neutral-300"></span>
                     <span className="size-2 bg-gray-600 rounded-full dark:bg-neutral-300"></span>
                   </div>
-                  <div className="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem] dark:bg-neutral-100 dark:text-neutral-600">
+                  <div className="flex justify-center items-center size-full bg-gray-700 text-[.25rem] text-gray-400 rounded-sm sm:text-[.5rem] dark:bg-neutral-200 dark:text-neutral-600">
                     {project2.webLinks}
                   </div>
                 </div>
