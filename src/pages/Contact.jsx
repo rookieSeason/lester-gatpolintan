@@ -13,8 +13,8 @@ function Contact() {
       </div>
       <div className="mx-auto text-center font-medium pt-4 tracking-tight">
         <p className="max-w-[250px] text-2xl sm:max-w-full sm:text-4xl text-gray-500 dark:text-gray-300 ">
-          I may not looking for any other opportunities, <br />I am willing to
-          collaborate with you.
+          I am now looking for other opportunities, <br />I am available
+          anytime.
         </p>
       </div>
     </section>

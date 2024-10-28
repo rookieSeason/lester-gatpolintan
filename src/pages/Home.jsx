@@ -1,7 +1,7 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
 import { FaArrowDown } from "react-icons/fa";
-import file from "../assets/Lester-John-Gatpolintan-Resume.pdf";
+import file from "../assets/LEG-resume.pdf";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { Link } from "react-scroll";
@@ -10,7 +10,7 @@ function Home() {
 
   const person = {
     name: "Lester John Gatpolintan",
-    description: "I build web application and provide efficient solutions",
+    description: "Web Developer | Aspiring QA Engineer",
   };
 
   return (
@@ -31,22 +31,19 @@ function Home() {
             <li className="bg-gray-300 dark:bg-gray-500"></li>
             <li className="bg-gray-300 dark:bg-gray-500"></li>
             <li className="bg-gray-300 dark:bg-gray-500"></li>
-            <li className="bg-gray-300 dark:bg-gray-500"></li>
-            <li className="bg-gray-300 dark:bg-gray-500"></li>
-            <li className="bg-gray-300 dark:bg-gray-500"></li>
           </ul>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-300 text-3xl sm:text-5xl font-medium tracking-tight antialiased">
+        <p className="text-gray-600 dark:text-gray-300 text-2xl sm:text-4xl font-medium tracking-tight antialiased">
           Hello, I'm
         </p>
-        <div className="text-center text-5xl sm:text-8xl font-medium animate-float tracking-tight">
+        <div className="text-center text-4xl sm:text-7xl font-medium animate-float tracking-tight">
           <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-cyan-300 animate-text py-2">
             {person.name}
           </h1>
         </div>
         <div className="mx-auto text-center font-medium pb-4 tracking-tight">
-          <p className="max-w-[250px] text-3xl sm:max-w-full sm:text-5xl text-gray-600 dark:text-gray-300 ">
+          <p className="max-w-[250px] text-2xl sm:max-w-full sm:text-4xl text-gray-600 dark:text-gray-300 ">
             {person.description}
           </p>
         </div>
@@ -55,17 +52,17 @@ function Home() {
             href={file}
             type="button"
             download
-            className="inline-flex items-center bg-white dark:bg-[#424242] text-gray-500 dark:text-gray-300 border border-gray-400 p-4 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 text-md me-3"
+            className="inline-flex items-center bg-white dark:bg-[#424242] text-gray-500 dark:text-gray-300 border border-gray-400 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-600 text-md me-3"
           >
-            Download CV <MdDownload className=" ms-2" />
+            Download CV <MdDownload className=" ms-1" />
           </a>
           <Link
             type="button"
             to="about"
             smooth={true}
-            className="inline-flex items-center bg-[#4285F4] text-gray-100 rounded-full p-4 hover:bg-blue-600 duration-300"
+            className="inline-flex items-center bg-[#4285F4] text-gray-100 rounded-full p-2 hover:bg-blue-600 duration-300 text-md"
           >
-            View More <FaArrowDown className=" ms-2" />
+            View More <FaArrowDown className=" ms-1" />
           </Link>
         </div>
       </section>

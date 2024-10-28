@@ -15,46 +15,31 @@ function Work() {
       responsibilities: (
         <ul className="list-disc px-4">
           <li>
-            Collaborated with a team to build web applications using a
-            microservices architecture design.
+            Collaborated with cross-functional teams to develop and test web
+            applications built on microservices architecture, ensuring high
+            performance and seamless integration.
           </li>
           <li>
-            Improved database performance by optimizing queries through
-            techniques like using ORM and refactoring the code.
+            Enhanced database performance by optimizing queries and resolving
+            issues, leveraging ORM techniques and code refactoring to improve
+            efficiency and data handling.
           </li>
           <li>
-            Utilized React JS to create intuitive, user-friendly interfaces that
-            prioritized accessibility and ease of navigation.
+            Created and validated intuitive, user-friendly interfaces using
+            React JS, with a focus on accessibility and smooth navigation,
+            contributing to overall user experience testing.
           </li>
           <li>
-            Tested and validated various API endpoints, ensuring seamless data
-            processing and integration for web applicatiion.
+            Tested and validated API endpoints, ensuring reliable data
+            processing and integration for web applications through thorough
+            manual and exploratory testing methods.
           </li>
           <li>
-            Successfully adapted and implemented existing project features using
-            new technologies, demonstrating a strong ability to learn and apply
-            new skills.
+            Identified and resolved data inconsistencies during migration
+            processes, ensuring smooth transitions and accurate data transfer,
+            focusing on both data integrity and functionality from a testing
+            perspective.
           </li>
-          <li>
-            Embraced challenging assignments as opportunities for growth,
-            adapting to new technologies and methodologies to achieve successful
-            outcomes.
-          </li>
-          <li>
-            Identified and resolved data inconsistencies and errors during
-            migration to a new application, ensuring a smooth transition and
-            accurate data transfer.
-          </li>
-        </ul>
-      ),
-      technologies: (
-        <ul className="list-disc px-4">
-          <li>React Js</li>
-          <li>Node Js</li>
-          <li>Sequelize</li>
-          <li>MS SQL Server</li>
-          <li>JavaScript</li>
-          <li>Reactstrap</li>
         </ul>
       ),
     },
@@ -68,29 +53,32 @@ function Work() {
       responsibilities: (
         <ul className="list-disc px-4">
           <li>
-            Assist with design projects in creating graphics for social media,
-            and website assets.
+            Assisted in the design and creation of graphics for social media
+            posts, website assets, and other digital marketing materials,
+            ensuring visually appealing and brand-consistent content across
+            platforms.
           </li>
           <li>
-            Research and collect images, fonts, and design elements for
-            projects.
-          </li>
-          <li>Maintain digital asset libraries.</li>
-          <li>
-            Collaborate on creative concepts and provide feedback on designs.
+            Conducted research and curated design resources, such as images,
+            fonts, icons, and other visual elements, to support ongoing and
+            upcoming projects, ensuring a diverse and high-quality selection of
+            assets.
           </li>
           <li>
-            Assist with administrative tasks and help maintain project
-            schedules.
+            Managed and maintained digital asset libraries, organizing files
+            efficiently to facilitate easy access and retrieval for future
+            design and marketing initiatives
           </li>
-        </ul>
-      ),
-      technologies: (
-        <ul className="list-disc px-4">
-          <li>Adobe Photoshop</li>
-          <li>Canva</li>
-          <li>Filmora</li>
-          <li>Capcut</li>
+          <li>
+            Collaborated on brainstorming sessions and contributed to creative
+            concepts, offering constructive feedback and suggestions to enhance
+            design quality and alignment with project goals.
+          </li>
+          <li>
+            Supported administrative tasks, including tracking project
+            timelines, maintaining schedules, and assisting with coordination
+            between teams to ensure smooth workflow and timely project delivery.
+          </li>
         </ul>
       ),
     },
